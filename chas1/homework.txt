@@ -1,0 +1,26 @@
+// Homework
+
+//const numbers = [23,34124,3453,1,123,434233,0,324,23];
+
+// 1)
+// const filterNumbers = numbers.filter((number) => number>1000);
+// console.log(filterNumbers);
+
+// 2)
+// const sortNumbers = numbers.sort((a,b) => {
+//     if(a < b) return -1; 
+//     if(a > b) return 1; 
+//     if(a === b) return 0; 
+// }); 
+// console.log(sortNumbers);
+
+// 3)
+// const sumNumbers = numbers.reduce((a,b) => a + b);
+// console.log(sumNumbers);
+
+// 4)
+// const findNumber = numbers.find((num) => num>10000);
+// console.log(findNumber); // find the first number that is bigger than 10000
+
+// 5)
+// Functions are "first-class-citizens" because they offer bigger flexibility and techniques of the Object type, which also allow for callbacks 
