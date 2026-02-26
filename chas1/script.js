@@ -11,7 +11,7 @@
 // 2. Function -> var
 // 3. Block -> const, let
 
-// Var, let also allow overloading, unlike const
+// Var, let also allow overloading, unlike const and can be accesed from anywhere
 
 // Global Scope
 // var test = "test"; // var not used anymore(see why below in the function)
@@ -103,7 +103,7 @@
 
 // 1)
 // const filterNumbers = numbers.filter((number) => number>1000);
-// console.log(filterNumbers);
+// console.log(filterNumbers);// find the elements that meet the condition in a new array
 
 // 2)
 // const sortNumbers = numbers.sort((a,b) => {
@@ -111,15 +111,29 @@
 //     if(a > b) return 1; 
 //     if(a === b) return 0; 
 // }); 
-// console.log(sortNumbers);
+// console.log(sortNumbers); // sort an array
 
 // 3)
 // const sumNumbers = numbers.reduce((a,b) => a + b);
-// console.log(sumNumbers);
+// console.log(sumNumbers); // find something (this ex.: sum of all elements) in the array
 
 // 4)
-// const findNumber = numbers.find((num) => num>10000);
-// console.log(findNumber); // find the first number that is bigger than 10000
+//const findNumber = numbers.find((num) => num>10000); // also , x(0 in this case) is added after num>10000, but no need now, but it has another parameter for
+//console.log(findNumber); // find the first element that is bigger than 10000
 
 // 5)
-// Functions are "first-class-citizens" because they offer bigger flexibility and techniques of the Object type, which also allow for callbacks 
+//Functions are "first-class-citizens" because they offer bigger flexibility and techniques of the Object type, which also allow for callbacks 
+
+
+
+// Chas 2 - Chas 1 continuation (new methods etc)
+
+// .reduce() function (built-in)
+//const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+//console.log("Sum:", sum); // accumulator, currentValue = i,j ; 0 = starting value 
+// 23 + 34124, that result + next etc
+
+// Same as:
+// function calculate(accumulator, currentValue) {
+//     return accumulator + currentValue;
+// }
